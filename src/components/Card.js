@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Card({ location }) {
     return (
-        <motion.div className="max-w-4xl px-0 p-10 flex gap-10 flex-wrap sm:flex-nowrap justify-center ">
+        <motion.div className="max-w-4xl px-0 p-10 flex gap-10 flex-wrap sm:flex-nowrap justify-center" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <img className="object-contain h-full w-48   rounded-lg " src={location.imageUrl} alt="" />
             <div className="flex flex-col justify-center px-10">
                 <div className="flex items-end gap-5">
@@ -30,5 +30,3 @@ function Card({ location }) {
 }
 
 export default Card;
-
-//whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
